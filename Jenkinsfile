@@ -6,6 +6,16 @@ pipeline {
             steps {
                 echo 'Hello World'
             }
+        },
+           stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        },
+               stage('Deploy') {
+            steps {
+                echo 'Deploying'
+            }
         }
     }
 }
